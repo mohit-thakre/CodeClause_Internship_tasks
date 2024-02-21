@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mohit gallery</title>
+    <link rel="icon" href="mohitlogo.jpg" />
+    <link rel="stylesheet" href="gallery.css" />
+  </head>
+  <body>
+    <main>
+      <div class="con1">
+        <h1>my gallery</h1>
+        <div class="SUB-CON">
+          <button onclick="imgFT('all')" type="button">All</button>
+          <button onclick="imgFT('animals')" type="button">Animals</button>
+          <button onclick="imgFT('buildings')" type="button">Buildings</button>
+          <button onclick="imgFT('cars')" type="button">Cars</button>
+        </div>
+        <div class="con" id="mainG">
+          <figure class="card">
+            <img src="animal1.jpeg" alt="" data-category="animals" />
+            <figcaption>image1</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="animal2.jpeg" alt="" data-category="animals" />
+            <figcaption>image2</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="animal3.jpeg" alt="" data-category="animals" />
+            <figcaption>image3</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="building1.jpeg" alt="" data-category="buildings" />
+            <figcaption>image4</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="building2.jpeg" alt="" data-category="buildings" />
+            <figcaption>image5</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="building3.jpeg" alt="" data-category="buildings" />
+            <figcaption>image6</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="car1.jpeg" alt="" data-category="cars" />
+            <figcaption>image7</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="car2.jpeg" alt="" data-category="cars" />
+            <figcaption>image8</figcaption>
+          </figure>
+          <figure class="card">
+            <img src="car3.jpeg" alt="" data-category="cars" />
+            <figcaption>image9</figcaption>
+          </figure>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>made with <span class="heart">❤️</span> by Mohit</p>
+    </footer>
+    <script src="gallery.js"></script>
+  </body>
+</html>

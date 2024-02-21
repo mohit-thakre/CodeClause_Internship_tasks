@@ -1,0 +1,90 @@
+body {
+  background-color: rgba(255, 228, 196, 0.878);
+}
+.con {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  gap: 10px;
+}
+img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+}
+img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.02);
+  transition: 0.2s;
+}
+img:hover + figcaption {
+  opacity: 1;
+  transition: 0.2s;
+}
+main,
+.SUB-CON {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 900;
+}
+figcaption {
+  position: relative;
+  top: -30px;
+  left: 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 800;
+  color: white;
+  opacity: 0;
+}
+button {
+  background: #6e6363;
+  border-radius: 999px;
+  margin: 10px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 8px 18px;
+  border: 0;
+  position: relative;
+  z-index: 1;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgb(0, 0, 234);
+  border-radius: 999px;
+  z-index: -1;
+  transform-origin: left;
+  transition: 0.5s;
+  transform: scaleX(0);
+}
+
+button:hover::before {
+  color: white;
+  transform: scaleX(1);
+}
+
+footer p {
+  font-family: Fantasy;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 900;
+  text-align: center;
+}
